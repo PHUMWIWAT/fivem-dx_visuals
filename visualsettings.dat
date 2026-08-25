@@ -35,11 +35,11 @@ weather.ChangeCloudOnSameCloudTypeChance 1.1
 weather.ChangeCloudOnSameWeatherTypeChance 1.1
 
 #Config for static values for skyhat
-sky.sun.centreStart	0.98
+sky.sun.centreStart	0.962
 sky.sun.centreEnd	1.00
 sky.cloudWarp	0.00
-sky.cloudInscatteringRange	0.69
-sky.cloudEdgeSmooth	0.80
+sky.cloudInscatteringRange	0.74
+sky.cloudEdgeSmooth	0.88
 sky.sunAxiasX	1.00
 sky.sunAxiasY	0.00
 sky.GameCloudSpeed	1.00
@@ -708,7 +708,7 @@ cam.followped.blur.beta.w	0.01
 cam.followped.blur.damage.time	500
 cam.followped.blur.damage.attacktime	0.1
 cam.followped.blur.damage.decaytime	0.3
-cam.followped.blur.cap	0.3
+cam.followped.blur.cap	0.16
 # cam.aimweapon.blur.zoom	0	0.10	0.00	0.1
 cam.aimweapon.blur.zoom.x	0
 cam.aimweapon.blur.zoom.y	0.10
@@ -733,19 +733,19 @@ cam.followvehicle.blur.zoom.w	0.025
 cam.followvehicle.blur.speed.x	25
 cam.followvehicle.blur.speed.y	50.00
 cam.followvehicle.blur.speed.z	0.00
-cam.followvehicle.blur.speed.w	0.2
+cam.followvehicle.blur.speed.w	0.08
 # cam.followvehicle.blur.damage	50	100.00	0.00	0.03
 cam.followvehicle.blur.damage.x	50
 cam.followvehicle.blur.damage.y	100.00
 cam.followvehicle.blur.damage.z	0.00
 cam.followvehicle.blur.damage.w	0.03
 cam.followvehicle.blur.damage.time	500
-cam.followvehicle.blur.cap	0.3
+cam.followvehicle.blur.cap	0.16
 cam.game.blur.wasted	0.1
 cam.game.blur.wasted.fadetime	1000
 cam.game.blur.busted	0.1
 cam.game.blur.busted.fadetime	1000
-cam.game.blur.cap	1
+cam.game.blur.cap	0.55
 cam.fpsweapon.blur	0.001
 cam.fpsweapon.sniperinitime	300
 cam.fpsweapon.blur.cap	1
@@ -818,8 +818,8 @@ emissive.night.start.time		20
 emissive.night.end.time			6
 
 # Misc Values
-misc.DOFBlurMultiplier.HD	1
-misc.DOFBlurMultiplier.SD	0.5
+misc.DOFBlurMultiplier.HD	0.58
+misc.DOFBlurMultiplier.SD	0.35
 misc.Multiplier.heightStart	100
 misc.Multiplier.heightEnd	250.00
 misc.Multiplier.farClipMultiplier	1
@@ -828,8 +828,8 @@ misc.3dMarkers.FrontLightIntensity	10.00
 misc.3dMarkers.frontLightExponent	32
 
 # coronas
-misc.coronas.sizeScaleGlobal					0.45
-misc.coronas.intensityScaleGlobal				0.3
+misc.coronas.sizeScaleGlobal	0.52
+misc.coronas.intensityScaleGlobal	0.42
 misc.coronas.intensityScaleWater				0.5
 misc.coronas.sizeScaleWater						0.5
 misc.coronas.sizeScaleParaboloid				0.9
@@ -841,7 +841,7 @@ misc.coronas.zBiasDistanceFar					1500.0
 misc.coronas.zBias.fromFinalSizeMultiplier 		0.1
 misc.coronas.occlusionSizeScale					0.5
 misc.coronas.occlusionSizeMax					32.0
-misc.coronas.flareCoronaSizeRatio				0.17
+misc.coronas.flareCoronaSizeRatio	0.14
 misc.coronas.flareMinAngleDegToFadeIn			30.0
 misc.coronas.flareScreenCenterOffsetSizeMult	200.0
 misc.coronas.flareColShiftR						0.005
@@ -868,23 +868,19 @@ misc.coronas.m_scaleRampUp						1.5
 misc.coronas.m_scaleRampUpAngle					20.0
 misc.coronas.flareScreenCenterOffsetVerticalSizeMult 0.95
 misc.coronas.screenEdgeMinDistForFade	0.95
-misc.BloomIntensityClamp.HD	12
-misc.BloomIntensityClamp.SD	12.00
-misc.CrossPMultiplier.RimLight	1.00
-misc.CrossPMultiplier.GlobalEnvironmentReflection	6.00
-misc.CrossPMultiplier.Gamma	1.10
-misc.CrossPMultiplier.MidBlur	1.00
-misc.CrossPMultiplier.Farblur	1.00
-misc.CrossPMultiplier.SkyMultiplier	1.20
-misc.CrossPMultiplier.Desaturation 	1.00
-misc.HiDof.nearBlur	2
-misc.HiDof.midBlur	0.82
-misc.HiDof.farBlur	2.10
-misc.cutscene.nearBlurMin	0.2
-misc.HiDof.nearBlur	2.00
-misc.HiDof.midBlur	0.80
-misc.HiDof.farBlur	2
-misc.cutscene.nearBlurMin	0.2
+misc.BloomIntensityClamp.HD	7.2
+misc.BloomIntensityClamp.SD	7.20
+misc.CrossPMultiplier.RimLight	1.18
+misc.CrossPMultiplier.GlobalEnvironmentReflection	3.85
+misc.CrossPMultiplier.Gamma	1.05
+misc.CrossPMultiplier.MidBlur	0.48
+misc.CrossPMultiplier.Farblur	0.72
+misc.CrossPMultiplier.SkyMultiplier	1.14
+misc.CrossPMultiplier.Desaturation	0.90
+misc.HiDof.nearBlur	0.38
+misc.HiDof.midBlur	0.10
+misc.HiDof.farBlur	0.92
+misc.cutscene.nearBlurMin	0.12
 misc.PedKillOverlay.duration 250.0f
 	
 misc.DamageOverlay.RampUpDuration 			75
@@ -968,23 +964,23 @@ seeThrough.ColorVisibleHot.red	0.95
 seeThrough.ColorVisibleHot.green	0.99
 seeThrough.ColorVisibleHot.blue	1
 
-Tonemapping.bright.filmic.A			0.3		
-Tonemapping.bright.filmic.B			0.23	
-Tonemapping.bright.filmic.C			0.1		
-Tonemapping.bright.filmic.D			0.2		
-Tonemapping.bright.filmic.E			0.01	
-Tonemapping.bright.filmic.F			0.3		
-Tonemapping.bright.filmic.W			4.0		
-Tonemapping.bright.filmic.exposure	-0.5
+Tonemapping.bright.filmic.A	0.26
+Tonemapping.bright.filmic.B	0.28
+Tonemapping.bright.filmic.C	0.10
+Tonemapping.bright.filmic.D	0.20
+Tonemapping.bright.filmic.E	0.01
+Tonemapping.bright.filmic.F	0.30
+Tonemapping.bright.filmic.W	8.50
+Tonemapping.bright.filmic.exposure	-0.22
 
-Tonemapping.dark.filmic.A			0.3
-Tonemapping.dark.filmic.B			0.23
-Tonemapping.dark.filmic.C			0.2
-Tonemapping.dark.filmic.D			0.2
-Tonemapping.dark.filmic.E			0.0
-Tonemapping.dark.filmic.F			0.3
-Tonemapping.dark.filmic.W			4.0
-Tonemapping.dark.filmic.exposure	3.0
+Tonemapping.dark.filmic.A	0.27
+Tonemapping.dark.filmic.B	0.26
+Tonemapping.dark.filmic.C	0.16
+Tonemapping.dark.filmic.D	0.20
+Tonemapping.dark.filmic.E	0.01
+Tonemapping.dark.filmic.F	0.30
+Tonemapping.dark.filmic.W	6.80
+Tonemapping.dark.filmic.exposure	2.15
 
 # Exposure
 Exposure.curve.scale	-106.200
@@ -992,11 +988,11 @@ Exposure.curve.power	0.007
 Exposure.curve.offset	104.700
 
 # Adaptation
-Adaptation.min.step.size 	0.15
-Adaptation.max.step.size 	4.5
-Adaptation.step.size.mult 	1.5
+Adaptation.min.step.size	0.08
+Adaptation.max.step.size	2.6
+Adaptation.step.size.mult	1.15
 Adaptation.threshold 		0.0
-Adaptation.sun.exposure.tweak	-2
+Adaptation.sun.exposure.tweak	-1.35
 
 
 # Cloud generation
@@ -1031,13 +1027,13 @@ rim.lighting.width.start					0.1
 rim.lighting.width.end						0.9
 rim.lighting.transition.angle				0.0
 rim.lighting.downmask.angle					0.4
-rim.lighting.main.colour.intensity			1.3
-rim.lighting.offangle.colour.intensity		0.4
+rim.lighting.main.colour.intensity	1.55
+rim.lighting.offangle.colour.intensity	0.48
 
 // Reflection tweaks
-reflection.tweaks.interior.artificial.boost	3.0
-reflection.tweaks.exterior.artificial.boost	9.0
-reflection.tweaks.emissive.boost			5.0
+reflection.tweaks.interior.artificial.boost	2.4
+reflection.tweaks.exterior.artificial.boost	5.4
+reflection.tweaks.emissive.boost	3.2
 
 // Light component cutoff
 lights.cutoff.distance					1000.0
@@ -1048,14 +1044,14 @@ lights.cutoff.nonGbuf.distance			75.0
 lights.cutoff.map.distance				1004.0
 
 // Bloom
-bloom.threshold.min			0.4
+bloom.threshold.min	0.58
 bloom.threshold.expsoure.diff.min	0.0
 bloom.threshold.expsoure.diff.max	0.0
-bloom.threshold.power			1.0
+bloom.threshold.power	1.15
 
-bloom.blurblendmult.large		0.5
-bloom.blurblendmult.med			2.0
-bloom.blurblendmult.small		1
+bloom.blurblendmult.large	0.28
+bloom.blurblendmult.med	0.82
+bloom.blurblendmult.small	0.68
 
 
 // Dynamic bake paramaters
@@ -1152,7 +1148,7 @@ dark.useNormal 1.0
 dark.useShadows 1.0
 dark.useVolumes 1.0
 dark.shadowNearCLip 0.2
-dark.shadowBlur 8.0
+dark.shadowBlur	6.5
 dark.volumeIntensity 0.1
 dark.volumeSize 0.05
 dark.volumeExponent 0.0
@@ -1202,21 +1198,21 @@ ped.phonelight.cone.inner		0.0
 ped.phonelight.cone.outer		90.0
 
 //Adaptive DOF - PC/NG Only
-adaptivedof.range.verynear			10
-adaptivedof.range.near				40
-adaptivedof.range.mid					2000
+adaptivedof.range.verynear	12
+adaptivedof.range.near	55
+adaptivedof.range.mid	1800
 adaptivedof.range.far					6000
 adaptivedof.range.veryfar				20000
 
-adaptivedof.day.verynear.nearout		-0.5
-adaptivedof.day.verynear.nearin		1.0
-adaptivedof.day.verynear.farin		-10.0
-adaptivedof.day.verynear.farout		300.0
+adaptivedof.day.verynear.nearout	-0.25
+adaptivedof.day.verynear.nearin	1.4
+adaptivedof.day.verynear.farin	-6.0
+adaptivedof.day.verynear.farout	220.0
 
-adaptivedof.day.near.nearout			-1.0
-adaptivedof.day.near.nearin			2.0
-adaptivedof.day.near.farin			-800.0
-adaptivedof.day.near.farout			8000.0
+adaptivedof.day.near.nearout	-0.6
+adaptivedof.day.near.nearin	2.4
+adaptivedof.day.near.farin	-500.0
+adaptivedof.day.near.farout	6500.0
 
 adaptivedof.day.mid.nearout			-2.0
 adaptivedof.day.mid.nearin			2.5
@@ -1233,15 +1229,15 @@ adaptivedof.day.veryfar.nearin		15.5
 adaptivedof.day.veryfar.farin		13000.0
 adaptivedof.day.veryfar.farout		25000.0
 
-adaptivedof.night.verynear.nearout	-0.5
-adaptivedof.night.verynear.nearin		1.05
-adaptivedof.night.verynear.farin		-25.0
-adaptivedof.night.verynear.farout		300.0
+adaptivedof.night.verynear.nearout	-0.25
+adaptivedof.night.verynear.nearin	1.35
+adaptivedof.night.verynear.farin	-14.0
+adaptivedof.night.verynear.farout	220.0
 
-adaptivedof.night.near.nearout		-1.0
-adaptivedof.night.near.nearin			1.0
-adaptivedof.night.near.farin			-200.0
-adaptivedof.night.near.farout			2500.0
+adaptivedof.night.near.nearout	-0.6
+adaptivedof.night.near.nearin	1.6
+adaptivedof.night.near.farin	-140.0
+adaptivedof.night.near.farout	2200.0
 
 adaptivedof.night.mid.nearout			-0.5
 adaptivedof.night.mid.nearin			2.0
@@ -1260,8 +1256,8 @@ adaptivedof.night.veryfar.farout		25000.0
 
 adaptivedof.missedrayvalue			10000
 adaptivedof.gridsize					15
-adaptivedof.gridscalex				0.3
-adaptivedof.gridscaley				0.5
+adaptivedof.gridscalex	0.18
+adaptivedof.gridscaley	0.30
 adaptivedof.gridscalexincover				0.1
 
 adaptivedof.gridscaleyincover				0.2
@@ -1269,8 +1265,8 @@ adaptivedof.gridscalexaiming			0.01
 adaptivedof.gridscaleyaiming			0.01
 adaptivedof.gridscalexrungun			0.02
 adaptivedof.gridscaleyrungun			0.03
-adaptivedof.smoothtime				0.85
-adaptivedof.nearplayeradjust			5.5f
+adaptivedof.smoothtime	1.40
+adaptivedof.nearplayeradjust	8.5
 
 adaptivedof.meleefocal.nearout		1.0
 adaptivedof.meleefocal.nearin			1.0
@@ -1298,21 +1294,21 @@ adaptivedof.exposureNight				1.0
 adaptivedof.exposureMin				-2.5
 adaptivedof.exposureMax				2.5
 
-bokeh.brightnessThresholdMin			4.0
-bokeh.brightnessThresholdMax			3.0
-bokeh.brightnessExposureMin			-3.0
-bokeh.brightnessExposureMax			1.0
-bokeh.cocThreshold				0.1
-bokeh.fadeRangeMin				1.320
-bokeh.fadeRangeMax				0.05
-bokeh.sizeMultiplier				2.3
-bokeh.globalAlpha					1.0
-bokeh.alphaCutoff					0.15
-bokeh.shapeExposureRangeMin				-3.0
-bokeh.shapeExposureRangeMax				2.0
+bokeh.brightnessThresholdMin	1.85
+bokeh.brightnessThresholdMax	5.20
+bokeh.brightnessExposureMin	-2.40
+bokeh.brightnessExposureMax	1.40
+bokeh.cocThreshold	0.07
+bokeh.fadeRangeMin	0.95
+bokeh.fadeRangeMax	0.12
+bokeh.sizeMultiplier	1.22
+bokeh.globalAlpha	0.58
+bokeh.alphaCutoff	0.08
+bokeh.shapeExposureRangeMin	-2.60
+bokeh.shapeExposureRangeMax	1.80
 
 defaultmotionblur.enabled				1
-defaultmotionblur.strength			0.1
+defaultmotionblur.strength	0.045
 
 procObjects.minRadiusForHeightMap			0.4
 
@@ -1331,4 +1327,4 @@ fpv.motionblur.weight0 1.0
 fpv.motionblur.weight1 0.0
 fpv.motionblur.weight2 0.8
 fpv.motionblur.weight3 1.0
-fpv.motionblur.max.velocity 82.0                                                                         
+fpv.motionblur.max.velocity	62.0
