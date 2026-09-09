@@ -49,10 +49,10 @@ weather.ChangeCloudOnSameCloudTypeChance 0.5
 weather.ChangeCloudOnSameWeatherTypeChance 0.5
 
 #Config for static values for skyhat
-sky.sun.centreStart	0.948
+sky.sun.centreStart	0.945
 sky.sun.centreEnd	1.00
 sky.cloudWarp	1.00
-sky.cloudInscatteringRange	0.82
+sky.cloudInscatteringRange	0.84
 sky.cloudEdgeSmooth	0.86
 sky.sunAxiasX	1.00
 sky.sunAxiasY	0.00
@@ -883,13 +883,13 @@ misc.coronas.flareScreenCenterOffsetVerticalSizeMult 0.95
 misc.coronas.screenEdgeMinDistForFade	0.95
 misc.BloomIntensityClamp.HD	6.2
 misc.BloomIntensityClamp.SD	6.20
-misc.CrossPMultiplier.RimLight	1.22
-misc.CrossPMultiplier.GlobalEnvironmentReflection	1.80
-misc.CrossPMultiplier.Gamma	0.98
+misc.CrossPMultiplier.RimLight	1.28
+misc.CrossPMultiplier.GlobalEnvironmentReflection	1.65
+misc.CrossPMultiplier.Gamma	1.14
 misc.CrossPMultiplier.MidBlur	1.00
 misc.CrossPMultiplier.Farblur	1.00
-misc.CrossPMultiplier.SkyMultiplier	1.35
-misc.CrossPMultiplier.Desaturation	0.48
+misc.CrossPMultiplier.SkyMultiplier	1.55
+misc.CrossPMultiplier.Desaturation	1.72
 misc.HiDof.nearBlur	1
 misc.HiDof.midBlur	0.20
 misc.HiDof.farBlur	1.00
@@ -982,23 +982,23 @@ seeThrough.ColorVisibleHot.green	0.99
 seeThrough.ColorVisibleHot.blue	1
 
 # Tonemapping
-Tonemapping.bright.filmic.A	0.34
-Tonemapping.bright.filmic.B	0.25
+Tonemapping.bright.filmic.A	0.28
+Tonemapping.bright.filmic.B	0.28
 Tonemapping.bright.filmic.C	0.10
-Tonemapping.bright.filmic.D	0.13
-Tonemapping.bright.filmic.E	0.02
+Tonemapping.bright.filmic.D	0.18
+Tonemapping.bright.filmic.E	0.01
 Tonemapping.bright.filmic.F	0.30
-Tonemapping.bright.filmic.W	6.40
-Tonemapping.bright.filmic.exposure	-0.04
+Tonemapping.bright.filmic.W	8.00
+Tonemapping.bright.filmic.exposure	0.18
 
-Tonemapping.dark.filmic.A	0.33
-Tonemapping.dark.filmic.B	0.25
-Tonemapping.dark.filmic.C	0.10
-Tonemapping.dark.filmic.D	0.14
-Tonemapping.dark.filmic.E	0.02
+Tonemapping.dark.filmic.A	0.27
+Tonemapping.dark.filmic.B	0.28
+Tonemapping.dark.filmic.C	0.12
+Tonemapping.dark.filmic.D	0.18
+Tonemapping.dark.filmic.E	0.01
 Tonemapping.dark.filmic.F	0.30
-Tonemapping.dark.filmic.W	5.60
-Tonemapping.dark.filmic.exposure	2.05
+Tonemapping.dark.filmic.W	7.00
+Tonemapping.dark.filmic.exposure	2.55
 
 # Exposure
 Exposure.curve.scale	-106.200
@@ -1010,7 +1010,7 @@ Adaptation.min.step.size	0.10
 Adaptation.max.step.size	2.4
 Adaptation.step.size.mult	1.20
 Adaptation.threshold 		0.0
-Adaptation.sun.exposure.tweak	-0.55
+Adaptation.sun.exposure.tweak	-0.20
 
 # Cloud generation
 cloudgen.frequency 				2.0
@@ -1044,8 +1044,8 @@ rim.lighting.width.start	0.22
 rim.lighting.width.end						0.9
 rim.lighting.transition.angle				0.0
 rim.lighting.downmask.angle					0.3
-rim.lighting.main.colour.intensity	1.60
-rim.lighting.offangle.colour.intensity	0.50
+rim.lighting.main.colour.intensity	1.55
+rim.lighting.offangle.colour.intensity	0.52
 
 // Reflection tweaks
 reflection.tweaks.interior.artificial.boost	3.2
