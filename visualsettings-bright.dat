@@ -49,11 +49,11 @@ weather.ChangeCloudOnSameCloudTypeChance 0.5
 weather.ChangeCloudOnSameWeatherTypeChance 0.5
 
 #Config for static values for skyhat
-sky.sun.centreStart	0.955
+sky.sun.centreStart	0.98
 sky.sun.centreEnd	1.00
 sky.cloudWarp	1.00
-sky.cloudInscatteringRange	0.78
-sky.cloudEdgeSmooth	0.86
+sky.cloudInscatteringRange	0.68
+sky.cloudEdgeSmooth	0.76
 sky.sunAxiasX	1.00
 sky.sunAxiasY	0.00
 sky.GameCloudSpeed	0.00
@@ -819,7 +819,7 @@ distantlights.carlight2.color.red		1.0
 distantlights.carlight2.color.green		0.01
 distantlights.carlight2.color.blue		0.0
 
-distantlights.streetlight.HDRIntensity	6.5
+distantlights.streetlight.HDRIntensity	1.0
 distantlights.streetlight.ZOffset		12.0
 distantlights.streetlight.Spacing		25.0
 distantlights.streetlight.color.red		1.0
@@ -841,8 +841,8 @@ misc.3dMarkers.FrontLightIntensity	10.00
 misc.3dMarkers.frontLightExponent	32
 
 # coronas
-misc.coronas.sizeScaleGlobal	0.70
-misc.coronas.intensityScaleGlobal	0.40
+misc.coronas.sizeScaleGlobal					0.75
+misc.coronas.intensityScaleGlobal				0.25
 misc.coronas.intensityScaleWater				0.5
 misc.coronas.sizeScaleWater						0.5
 misc.coronas.sizeScaleParaboloid				1.0
@@ -881,15 +881,15 @@ misc.coronas.m_scaleRampUp						1.5
 misc.coronas.m_scaleRampUpAngle					20.0
 misc.coronas.flareScreenCenterOffsetVerticalSizeMult 0.95
 misc.coronas.screenEdgeMinDistForFade	0.95
-misc.BloomIntensityClamp.HD	8.5
-misc.BloomIntensityClamp.SD	8.50
-misc.CrossPMultiplier.RimLight	1.16
-misc.CrossPMultiplier.GlobalEnvironmentReflection	1.55
-misc.CrossPMultiplier.Gamma	1.08
+misc.BloomIntensityClamp.HD	0
+misc.BloomIntensityClamp.SD	00.00
+misc.CrossPMultiplier.RimLight	1.00
+misc.CrossPMultiplier.GlobalEnvironmentReflection	1.00
+misc.CrossPMultiplier.Gamma	1.00
 misc.CrossPMultiplier.MidBlur	1.00
 misc.CrossPMultiplier.Farblur	1.00
-misc.CrossPMultiplier.SkyMultiplier	1.24
-misc.CrossPMultiplier.Desaturation	0.80
+misc.CrossPMultiplier.SkyMultiplier	1.00
+misc.CrossPMultiplier.Desaturation 	1.00
 misc.HiDof.nearBlur	1
 misc.HiDof.midBlur	0.20
 misc.HiDof.farBlur	1.00
@@ -944,7 +944,7 @@ misc.SniperRifleDof.NearEnd 	0.0
 misc.SniperRifleDof.FarStart 	5000.0
 misc.SniperRifleDof.FarEnd 		5000.0
 
-misc.MoonDimMult	0.48
+misc.MoonDimMult				0.3
 
 misc.NextGenModifier			1.0
 
@@ -982,23 +982,23 @@ seeThrough.ColorVisibleHot.green	0.99
 seeThrough.ColorVisibleHot.blue	1
 
 # Tonemapping
-Tonemapping.bright.filmic.A	0.24
-Tonemapping.bright.filmic.B	0.30
-Tonemapping.bright.filmic.C	0.10
-Tonemapping.bright.filmic.D	0.20
-Tonemapping.bright.filmic.E	0.01
-Tonemapping.bright.filmic.F	0.30
-Tonemapping.bright.filmic.W	9.20
-Tonemapping.bright.filmic.exposure	-0.08
+Tonemapping.bright.filmic.A			0.22
+Tonemapping.bright.filmic.B			0.3
+Tonemapping.bright.filmic.C			0.10
+Tonemapping.bright.filmic.D			0.2
+Tonemapping.bright.filmic.E			0.01
+Tonemapping.bright.filmic.F			0.3
+Tonemapping.bright.filmic.W			4.0
+Tonemapping.bright.filmic.exposure	-0.5
 
-Tonemapping.dark.filmic.A	0.24
-Tonemapping.dark.filmic.B	0.30
-Tonemapping.dark.filmic.C	0.12
-Tonemapping.dark.filmic.D	0.20
-Tonemapping.dark.filmic.E	0.01
-Tonemapping.dark.filmic.F	0.30
-Tonemapping.dark.filmic.W	7.20
-Tonemapping.dark.filmic.exposure	2.40
+Tonemapping.dark.filmic.A			0.22
+Tonemapping.dark.filmic.B			0.3
+Tonemapping.dark.filmic.C			0.10
+Tonemapping.dark.filmic.D			0.2
+Tonemapping.dark.filmic.E			0.0
+Tonemapping.dark.filmic.F			0.3
+Tonemapping.dark.filmic.W			4.0
+Tonemapping.dark.filmic.exposure	3.0
 
 # Exposure
 Exposure.curve.scale	-106.200
@@ -1006,11 +1006,11 @@ Exposure.curve.power	0.007
 Exposure.curve.offset	104.700
 
 # Adaptation
-Adaptation.min.step.size	0.10
-Adaptation.max.step.size	2.4
-Adaptation.step.size.mult	1.20
+Adaptation.min.step.size 	0.15
+Adaptation.max.step.size 	3.0
+Adaptation.step.size.mult 	1.5
 Adaptation.threshold 		0.0
-Adaptation.sun.exposure.tweak	-0.75
+Adaptation.sun.exposure.tweak	-2
 
 # Cloud generation
 cloudgen.frequency 				2.0
@@ -1040,17 +1040,17 @@ skyplane.fog.fade.start	64.0
 skyplane.fog.fade.end	128.0
 
 // Rim lighting
-rim.lighting.width.start	0.22
+rim.lighting.width.start					0.3
 rim.lighting.width.end						0.9
 rim.lighting.transition.angle				0.0
 rim.lighting.downmask.angle					0.3
-rim.lighting.main.colour.intensity	1.40
-rim.lighting.offangle.colour.intensity	0.42
+rim.lighting.main.colour.intensity			1.0
+rim.lighting.offangle.colour.intensity		0.3
 
 // Reflection tweaks
-reflection.tweaks.interior.artificial.boost	3.2
-reflection.tweaks.exterior.artificial.boost	4.4
-reflection.tweaks.emissive.boost	4.2
+reflection.tweaks.interior.artificial.boost	3.0
+reflection.tweaks.exterior.artificial.boost	3.0
+reflection.tweaks.emissive.boost			5.0
 
 // Light component cutoff
 lights.cutoff.distance					1000.0
@@ -1061,14 +1061,14 @@ lights.cutoff.nonGbuf.distance			75.0
 lights.cutoff.map.distance				1004.0
 
 // Bloom
-bloom.threshold.min	0.52
+bloom.threshold.min			0.4
 bloom.threshold.expsoure.diff.min	0.0
 bloom.threshold.expsoure.diff.max	0.0
-bloom.threshold.power	1.12
+bloom.threshold.power			1.0
 
-bloom.blurblendmult.large	0.30
-bloom.blurblendmult.med	0.90
-bloom.blurblendmult.small	0.82
+bloom.blurblendmult.large		0.5
+bloom.blurblendmult.med			2.0
+bloom.blurblendmult.small		1
 
 
 // Dynmaic bake paramaters
@@ -1124,7 +1124,7 @@ misc.brightlight.distculled.FadeStart	60.0
 misc.brightlight.distculled.FadeEnd	80.0
 misc.brightlight.notdistculled.FadeStart	100.0
 misc.brightlight.notdistculled.FadeEnd	110.0
-misc.brightlight.globalIntensity	6.8
+misc.brightlight.globalIntensity	4.0
 misc.brightlight.railwayItensity	2.5
 misc.brightlight.coronaZBias	1.0
 
